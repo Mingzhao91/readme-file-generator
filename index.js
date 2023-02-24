@@ -46,7 +46,7 @@ function generateQuertions() {
   );
   questionsArr.push(
     createQuestion(
-      "contrubuting",
+      "contributions",
       "Please enter the contribution guidelines for your project?"
     )
   );
@@ -85,6 +85,7 @@ function writeToFile(fileName, data) {}
 async function init() {
   questions = [...generateQuertions()];
   const answers = await getUserAnswers(questions);
+  const readmeStr = generateMarkdown(answers);
 }
 
 // function call to initialize program
