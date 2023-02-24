@@ -79,13 +79,25 @@ async function getUserAnswers(questions) {
 }
 
 // function to write README file
-function writeToFile(fileName, data) {}
+async function writeToFile(fileName, data) {
+  try {
+    await fs.writeFileSync(path.join(__dirname, fileName), data);
+    console.log(`The readme file, ${fileName}, is successfully generated!`);
+  } catch (error) {
+    console.log("ERROR: ", error);
+  }
+}
 
 // function to initialize program
 async function init() {
+  // get questions to put into inquirer
   questions = [...generateQuertions()];
+  // get all answers from the user
   const answers = await getUserAnswers(questions);
+  // create a readme file in text according to the user's answer
   const readmeStr = generateMarkdown(answers);
+  // write the text into a file
+  await writeToFile("example-readme.md", readmeStr);
 }
 
 // function call to initialize program
