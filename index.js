@@ -74,12 +74,17 @@ function generateQuertions() {
   return questionsArr;
 }
 
+async function getUserAnswers(questions) {
+  return await inquirer.prompt(questions);
+}
+
 // function to write README file
 function writeToFile(fileName, data) {}
 
 // function to initialize program
-function init() {
+async function init() {
   questions = [...generateQuertions()];
+  const answers = await getUserAnswers(questions);
 }
 
 // function call to initialize program
