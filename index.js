@@ -97,7 +97,7 @@ async function init() {
   // create a readme file in text according to the user's answer
   const readmeStr = generateMarkdown(answers);
   // write the text into a file
-  await writeToFile("example-readme.md", readmeStr);
+  await writeToFile("sample-README.md", readmeStr);
 }
 
 // function call to initialize program
