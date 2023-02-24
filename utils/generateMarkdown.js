@@ -7,7 +7,7 @@ function getTitle(data) {
       )}-blue)`
     : "";
 
-  return data.title ? `# ${data.title}\n${licenseBadge}\n` : "";
+  return data.title ? `# ${data.title} ${licenseBadge}\n ` : "";
 }
 
 // write description
