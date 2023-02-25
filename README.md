@@ -11,7 +11,7 @@ The command-line application allows user to quickly and easily create a README f
 - **[How Does It Work](#how-does-it-work)**
   - [Prompt Questions For User](#prompt-questions-for-user)
   - [Generate README File](#generate-file)
-- [Deployment](#deployment)
+- [Installation](#installation)
 - [Authors](#authors)
 - [License](#license)
 
@@ -39,9 +39,14 @@ After answering questions in the terminal, a sample-README.md file is generated.
 ![Generate REAMDE File](./assets/screenshots/readme.png)
 <br />
 
-## Deployment
+## Installation
 
-Find the repository <a href="https://github.com/Mingzhao91/readme-file-generator" target="_blank">here</a>.
+Download the code <a href="https://github.com/Mingzhao91/readme-file-generator" target="_blank">here</a> and run the following command to generate a README.md file.
+
+```
+node index.js
+```
+
 <br/>
 
 ## Authors
