@@ -7,7 +7,7 @@ function getTitle(data) {
       )}-blue)`
     : "";
 
-  return data.title ? `# ${data.title} ${licenseBadge}\n ` : "";
+  return data.title ? `# ${data.title} ${licenseBadge}\n\n` : "";
 }
 
 // write description
@@ -97,7 +97,7 @@ function getQuestions(data) {
     str = "## Questions\n";
 
     if (data.username) {
-      str += `You can click [here](https://github.com/${data.username}) to visit my GitHub profile.\n`;
+      str += `You can click [here](https://github.com/${data.username}) to visit my GitHub profile.\n<br>`;
     }
 
     if (data.email) {
@@ -119,8 +119,8 @@ function generateMarkdown(data) {
   readmeStr += getTableContents(data);
   readmeStr += getInstallation(data);
   readmeStr += getUsage(data);
-  readmeStr += getLicense(data);
   readmeStr += getContributions(data);
+  readmeStr += getLicense(data);
   readmeStr += getTests(data);
   readmeStr += getQuestions(data);
 
