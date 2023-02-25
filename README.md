@@ -1,4 +1,4 @@
-# README File Generator
+# Sample README File
 
 ## Description
 
