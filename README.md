@@ -3,7 +3,6 @@
 ## Description
 
 The command-line application allows user to quickly and easily create a README file by simply providing essential information about the project. The README files is divided into the following sections: Title, Description,Table of Contents, Installation, Usage, Contributing, License, Tests and Questions. By simplifying the process of write a README.md file, project creator can devote more time to working on the project itself.
-
 <br/>
 
 ## Table of Contents
