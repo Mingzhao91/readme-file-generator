@@ -13,8 +13,7 @@ The command-line application allows user to quickly and easily create a README f
 - [Installation](#installation)
 - [Authors](#authors)
 - [License](#license)
-
-<br/>
+  <br/>
 
 ## How Does It Work
 
